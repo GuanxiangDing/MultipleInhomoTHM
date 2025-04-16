@@ -1,0 +1,14 @@
+11                                        !CASE NUMBER
+1                                        !Plane strain: 1        Plane stress: 2
+1.D0,2.D0,0.D0                  !Burgers vector BZ; RKZ, ETA
+0.D0, 0.D0,1.D0,1.D0            !INCX, INCY, EMAJOR, EMINOR
+1.D0, 1.D0                          !RABC(1), RABC(2)
+15                                        !ITMAX
+1.D0, 0.3D0, 2.D0, 0.3D0           !EM,VM,EI,VI
+0.D0, 0.D0, 0.D0                            !Initial EGN0
+15                                                  !ITMAXT
+1.D0, 2.D0                                     !LAMDM--MATRIX, LAMDI--INCLUSION
+0.D0, 0.D0                                     !EGNTG0(1), EGNTG0(2)
+20.D0                                            !DELTA, the length of the computational region in FEM
+1.D0                                              !THERMAL EXPANSION
+-6.D0, 6.D0, -6D0, 6.D0                !REGION FOR MULTIPLE INHOMO
